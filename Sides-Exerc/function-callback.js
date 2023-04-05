@@ -23,13 +23,27 @@ function f3(callback) {
         if (callback) callback();
     } , rand())
 }
+//podemos fazer com functions anononimas.
+// f1(function(){
+//     f2(function(){
+//         f3(function(){
+//             console.log('Ola mundo.')
+//         });
+//     });
+// });
 
-f1(function(){
-    f2(function(){
-        f3(function(){
-            console.log('Ola mundo.')
-        });
-    });
-});
+// declarando function
+
+f1(f1CallBack);
+function f1CallBack() {
+    f2(f2CallBack);
+};
+function f2CallBack() {
+    f3(f3CallBack);
+}
+
+function f3CallBack() {
+   console.log('function declarada')
+}
 
 
