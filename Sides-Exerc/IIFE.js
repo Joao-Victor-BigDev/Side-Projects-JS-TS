@@ -6,10 +6,11 @@
 // temos que executar no final da function pois ela nao toca no escopo global.
 
 (function (){
-    const nome = 'Big';
-    function falaOi(){
+    function falaOi(nome){
         console.log(`Oi ${nome}`)
     };
-    falaOi();
+    falaOi('Marcelo');
 })();
 // tambem podendo atribuir function declaradas dentro das IIFE.
+
+falaOi('Marcelo');
