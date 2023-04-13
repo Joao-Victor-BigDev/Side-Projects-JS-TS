@@ -12,5 +12,3 @@
     falaOi('Marcelo');
 })();
 // tambem podendo atribuir function declaradas dentro das IIFE.
-
-falaOi('Marcelo');
